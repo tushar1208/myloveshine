@@ -1,18 +1,16 @@
 {
-  "name": "love-website",
+  "name": "my-love-website",
   "version": "1.0.0",
-  "description": "A beautiful romantic website for my love",
-  "type": "module",
+  "description": "A beautiful love website",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "serve -s .",
+    "build": "echo 'No build process needed for static site' && mkdir -p dist && cp -r *.html *.css *.js *.mp3 *.mp4 *.png *.jpg *.jpeg images/ dist/ || true",
+    "start": "serve -s dist"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "vite": "^4.4.5"
+  "dependencies": {
+    "serve": "^14.2.0"
   },
-  "keywords": ["love", "romantic", "website"],
+  "keywords": ["love", "website", "romantic"],
   "author": "Tushar",
   "license": "MIT"
 }
