@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Background Music Player -->
+  <div class="music-player">
+    <button id="musicBtn">🎵 Play Music</button>
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="section hero">
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="hero-section.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+      <img src="herobg.png" alt="i love you" class="hero-image">
+      <h1>For the Love of My Life</h1>
+      <p>A small piece of my heart made just for you.</p>
+      <div id="days-counter"> We've been together for <span id="days"></span> days </div>
+    </div>
+  </section>
+
+  <!-- Image Carousel -->
+  <section id="girl-image" class="section">
+    <h2>You My Love</h2>
+    <div class="dynamic-carousel-container">
+      <div class="dynamic-carousel-track">
+        <div class="carousel-slide active">
+          <img src="images/1.jpg" alt="1" />
+        </div>
+        <div class="carousel-slide active">
+          <img src="images/2.jpg" alt="2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/3.jpg" alt="3" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/4.jpg" alt="4" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/5.jpg" alt="5" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/6.jpg" alt="6" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/7.jpg" alt="7" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/8.jpg" alt="8" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/9.jpg" alt="9" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/10.jpeg" alt="10" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/11.jpeg" alt="11" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/12.jpg" alt="12" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/13.jpeg" alt="13" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/14.jpeg" alt="14" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/15.jpeg" alt="15" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/16.jpeg" alt="16" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/17.jpeg" alt="17" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/18.jpeg" alt="18" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/19.jpeg" alt="19" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/20.jpeg" alt="20" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/21.jpeg" alt="21" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/22.jpeg" alt="22" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/23.jpeg" alt="23" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/24.jpeg" alt="24" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/25.jpeg" alt="25" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/26.jpeg" alt="26" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/27.jpeg" alt="27" />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-indicators"></div>
+      <div class="image-counter">
+        <span id="current-image">1</span> / <span id="total-images">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Romantic Birthday Section -->
+  <section id="birthday" class="section birthday-romantic">
+    <div class="birthday-inner">
+      <h2 class="romantic-birthday-title">💝 Happy Birthday, My Queen 👑</h2>
+      <p class="romantic-birthday-intro">
+        Today the universe glows brighter,
+        because it celebrates the day *you* came into the world.
+        My heart beats softer, my soul feels lighter —
+        because it belongs to you. 💫
+      </p>
+
+      <div class="romantic-birthday-box">
+        <p>Every sunrise reminds me of your smile. ☀️</p>
+        <p>Every heartbeat whispers your name. 💗</p>
+        <p>You're not just my love — you are my miracle, my forever dream. 🌹</p>
+        <p class="signature">With endless love,<br><strong>— Tushar Devkaran</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Romantic Story Section -->
+  <section id="story" class="section story-section">
+    <div class="story-wrapper">
+      <!-- Left Side: Text -->
+      <div class="story-content fade-in">
+        <h2 class="romantic-title">Our Beautiful Story</h2>
+        <p class="romantic-text">
+          It all began with a simple glance — and in that moment,
+          my world found its missing piece.
+          Every laugh, every touch, every memory we've made
+          paints the colors of my heart. 💖
+          <br><br>
+          You are my poetry, my calm in chaos,
+          my forever favorite chapter.
+        </p>
+
+        <div class="timeline">
+          <div class="event fade-in">💬 "Hey, you." — and everything changed.</div>
+          <div class="event fade-in">🌸 Our First Date — endless smiles, shy hearts.</div>
+          <div class="event fade-in">💍 Together — our story, written in stars.</div>
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="story-image fade-in">
+        <div class="image-frame">
+          <img src="ourphoto.jpg" alt="Our Story Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2 class="gallery-title">Precious moments</h2>
+    <div class="gallery-container">
+      <div class="gallery-slide">
+        <div class="gallery-item active" data-index="0">
+          <img src="images/102.jpeg" alt="102" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="1">
+          <img src="images/101.jpeg" alt="101" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="2">
+          <img src="images/30.jpg" alt="30" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="3">
+          <img src="images/32.jpg" alt="32" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="4">
+          <img src="images/31.jpeg" alt="31" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="5">
+          <img src="images/33.jpg" alt="33" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="6">
+          <img src="images/34.jpg" alt="34" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="7">
+          <img src="images/35.jpg" alt="35" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="8">
+          <img src="images/36.jpg" alt="36" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="9">
+          <img src="images/37.jpeg" alt="37" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="10">
+          <img src="images/38.jpg" alt="38" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="11">
+          <img src="images/39.jpeg" alt="39" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="12">
+          <img src="images/40.jpg" alt="40" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="13">
+          <img src="images/41.jpg" alt="41" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="14">
+          <img src="images/42.jpg" alt="42" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="15">
+          <img src="images/43.jpg" alt="43" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="16">
+          <img src="images/44.jpg" alt="44" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="17">
+          <img src="images/45.jpg" alt="45" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="18">
+          <img src="images/46.jpg" alt="46" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="19">
+          <img src="images/47.jpeg" alt="47" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="20">
+          <img src="images/48.jpg" alt="48" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="21">
+          <img src="images/49.jpg" alt="49" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="22">
+          <img src="images/50.jpeg" alt="50" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="23">
+          <img src="images/51.jpeg" alt="51" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="24">
+          <img src="images/52.jpeg" alt="52" loading="lazy">
+        </div>
+        <div class="gallery-item" data-index="25">
+          <video controls muted playsinline>
+            <source src="images/53.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="gallery-controls">
+        <button class="gallery-prev" aria-label="Previous image">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="gallery-next" aria-label="Next image">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="gallery-indicators"></div>
+
+      <div class="gallery-counter">
+        <span id="current-gallery-item">1</span> / <span id="total-gallery-items">26</span>
+      </div>
+
+      <div class="gallery-loader">
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why I Love You Section -->
+  <section id="reasons" class="section reasons-romantic fade-in">
+    <div class="reasons-wrapper">
+      <!-- Left: Image -->
+      <div class="reasons-image fade-in">
+        <div class="heart-frame">
+          <img src="why.jpg" alt="Why I Love You Image" />
+          <div class="soft-glow"></div>
+        </div>
+      </div>
+
+      <!-- Right: Text -->
+      <div class="reasons-content fade-in">
+        <h2 class="reasons-title">Why I Love You</h2>
+        <p class="reasons-text">
+          Every heartbeat of mine finds its rhythm in your smile.
+          You make the ordinary magical and the impossible seem easy.
+          Your love wraps me in warmth, peace, and endless wonder. 🌹
+          <br><br>
+          You are my home, my laughter, my calm after every storm.
+          Loving you isn't just a feeling — it's the purpose of my soul. 💫
+        </p>
+
+        <ul class="reasons-list">
+          <li>💖 Your smile brightens even my darkest days.</li>
+          <li>🌸 You believe in me when I forget to believe in myself.</li>
+          <li>💫 You make silence comfortable and moments timeless.</li>
+          <li>🌹 You love fiercely, selflessly, beautifully.</li>
+          <li>💞 You are, simply, my everything.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Forever Dreams Section -->
+  <section id="future" class="section future-romantic fade-in">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="future-bg-video">
+      <source src="future-section.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="future-overlay"></div>
+
+    <div class="future-wrapper">
+      <!-- Left Side: Text -->
+      <div class="future-content fade-in">
+        <h2 class="future-title">Our Forever Dreams</h2>
+        <p class="future-text">
+          When I think about tomorrow, I see you —
+          your smile in the morning light, your laughter echoing in our home. 🏡
+          Our story is still being written,
+          and the best chapters are yet to come. 💖
+        </p>
+
+        <div class="future-cards">
+          <div class="future-card fade-in">
+            <h3>Our Dream Home</h3>
+            <p>A little place filled with warmth, laughter,
+              and late-night cuddles — our own cozy paradise.</p>
+          </div>
+
+          <div class="future-card fade-in">
+            <h3>Exploring the World</h3>
+            <p>From hidden beaches to glowing city lights,
+              every trip will be another page in our fairytale. 🌍</p>
+          </div>
+
+          <div class="future-card fade-in">
+            <h3>Growing Old Together</h3>
+            <p>Wrinkles, gray hair, and shared memories —
+              still holding hands, still saying "I love you." 💞</p>
+          </div>
+
+          <div class="future-card fade-in">
+            <h3>Our Life Symphony</h3>
+            <p>A melody of laughter, patience, and everlasting love —
+              played in perfect harmony, forever and always. 🎵</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="future-image fade-in">
+        <div class="dream-frame">
+          <img src="future.jpg" alt="Our Future Together" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Romantic Letter Section -->
+  <section id="letter" class="section letter-romantic">
+    <h2 class="letter-title">A Letter from My Heart</h2>
+
+    <!-- Envelope -->
+    <div class="envelope-scene" onclick="openLetter()">
+      <div class="envelope">
+        <div class="envelope-front">
+          <div class="flap"></div>
+          <div class="pocket"></div>
+          <div class="heart-seal">💖</div>
+        </div>
+        <div class="letter-sheet">
+          <p>To My Forever Love ❤️</p>
+        </div>
+      </div>
+      <p class="tap-text">Tap to open</p>
+    </div>
+
+    <!-- Open Letter Button -->
+    <button onclick="openLetter()" class="open-btn">Open Letter</button>
+
+    <!-- Letter Modal -->
+    <div id="letterModal" class="letter-modal">
+      <div class="letter-popup">
+        <span class="close-btn" onclick="closeLetter()">✖</span>
+        <h3 class="popup-title">To My Forever Love</h3>
+        <div class="popup-content">
+          <p>My Dearest Shine,<br><br>
+            I don't really know how to express my feelings to you, but I just want to say that when we first met, it was
+            simply a teacher–student relationship. I don't know how, but something between us changed — a bond formed, a
+            spark grew — and that's how our story, the story of BunShai, began.
+            <br><br>
+            Every single moment I spent with you at ThinkNEXT is a memory I'll treasure for a lifetime. With that one
+            beautiful chapter, I want to create every remaining chapter of my life — with you. Whenever I ask you
+            something, you always say just one thing — "I don't know."
+            <br><br>
+            And honestly, sometimes even hearing that makes me smile. But then, when I look at my family, I feel a
+            little
+            anger too. I know I get upset with you without any real reason at times… but what can I do? The truth
+            is, you're the reason behind my anger, and at the same time, you're the only one who can calm me down.
+            <br><br>
+            I just want to be with you — only you — because no one else could ever take your place in my life. I know I
+            may
+            be the first in your life, but I wish to be the last one too. And even though I wasn't your first, I want
+            you to
+            be my last, forever and always.
+            <br><br>
+            Now, there's only one dream left — to make you my parents' beloved daughter-in-law as soon as possible. I
+            know
+            you have goals to achieve first, and you should chase them — but my love, time is flying. Whatever you want
+            to
+            do, do it soon, because I want to speak to my parents and make you officially mine forever.
+            <br><br>
+            That's all I want to say for now. Please, enjoy your day to the fullest and keep smiling always. May Kanha
+            fulfill every wish in your heart.
+            <br><br>
+            One last thing — I've never written such a letter to anyone before, nor have I ever created a website to
+            express
+            my feelings. You truly are special.
+            <br><br>
+            Once again, happiest birthday, my love.
+            I want to lay all the happiness of the world at your feet — because you deserve nothing less.
+          </p>
+          <p class="signature">Forever yours,<br><strong>— Tushar Devkaran</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ending / Thank You Section -->
+  <section id="contact" class="section ending-section">
+    <div class="ending-wrapper">
+      <h2 class="ending-title">Thank You for Being My Forever</h2>
+
+      <p class="ending-text">
+        Every heartbeat, every smile, every moment — it all means the world to me.
+        Thank you for filling my life with love, laughter, and endless warmth.
+        <br><br>
+        You are my peace, my reason, my forever home.
+        No words will ever be enough, but my heart will always whisper —
+        <strong>"I love you, endlessly." 💫</strong>
+      </p>
+
+      <a href="https://wa.me/8091700280" target="_blank" class="romantic-btn end-btn">💌 Send a Message</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 For My Love | Designed with Elegance 💫</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
