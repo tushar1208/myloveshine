@@ -2,23 +2,54 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "**/*.html",
       "use": "@vercel/static"
     },
     {
-      "src": "*.css",
+      "src": "**/*.css",
       "use": "@vercel/static"
     },
     {
-      "src": "*.js",
+      "src": "**/*.js",
       "use": "@vercel/static"
     },
     {
-      "src": "images/*",
+      "src": "**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.mp3",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.mp4",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.jpeg",
       "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/(.*\\.(css|js|json|mp3|mp4|png|jpg|jpeg))",
+      "headers": {
+        "cache-control": "s-maxage=86400"
+      },
+      "dest": "/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/ani.html"
