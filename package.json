@@ -1,12 +1,18 @@
 {
-  "name": "my-love-website",
+  "name": "love-website",
   "version": "1.0.0",
-  "description": "A beautiful love website",
+  "description": "A beautiful romantic website for my love",
+  "type": "module",
   "scripts": {
-    "dev": "serve .",
-    "build": "echo 'No build step needed'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": ["love", "website", "romantic"],
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "keywords": ["love", "romantic", "website"],
   "author": "Tushar",
   "license": "MIT"
 }
