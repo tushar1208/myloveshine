@@ -1,0 +1,12 @@
+{
+  "name": "my-love-website",
+  "version": "1.0.0",
+  "description": "A beautiful love website",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'No build step needed'"
+  },
+  "keywords": ["love", "website", "romantic"],
+  "author": "Tushar",
+  "license": "MIT"
+}
